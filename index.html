@@ -13,17 +13,17 @@
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start; /* Align items at the top */
       position: relative;
       overflow: hidden;
       flex-direction: column;
-      text-align: center; /* Center the content */
+      text-align: center;
     }
 
     h1 {
       font-size: 4rem;
       z-index: 1;
-      margin-bottom: 20px;
+      margin: 20px 0; /* Add spacing around the header */
     }
 
     .ad {
@@ -44,6 +44,23 @@
     .bottom-left { bottom: 20px; left: 20px; }
     .bottom-right { bottom: 20px; right: 20px; }
 
+    .modrinth-button {
+      background: #28a745; /* Green background */
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      z-index: 1;
+      box-shadow: 0 0 10px #28a745;
+      margin-top: 20px; /* Small gap between header and button */
+    }
+
+    .modrinth-button:hover {
+      background: #218838;
+    }
+
     a {
       position: absolute;
       bottom: 40px;
@@ -58,23 +75,6 @@
       font-family: Impact, Charcoal, sans-serif;
       font-size: 1.2rem;
       z-index: 1;
-    }
-
-    .modrinth-button {
-      background: #28a745; /* Green background */
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1.5rem;
-      font-weight: bold;
-      z-index: 1;
-      box-shadow: 0 0 10px #28a745;
-      margin-top: 10px; /* Small gap below header */
-    }
-
-    .modrinth-button:hover {
-      background: #218838;
     }
   </style>
 </head>
