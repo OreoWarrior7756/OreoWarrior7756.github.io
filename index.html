@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Impact, Charcoal, sans-serif;
-      background: #602f60; /* Custom Purple */
+      background: #000000; /* Black background */
       color: white;
       height: 100vh;
       display: flex;
@@ -48,7 +48,7 @@
       left: 50%;
       transform: translateX(-50%);
       background: white;
-      color: #602f60; /* Matching purple text */
+      color: #000000; /* Black text */
       padding: 1rem 1.5rem;
       border-radius: 10px;
       text-decoration: none;
@@ -56,6 +56,26 @@
       font-family: Impact, Charcoal, sans-serif;
       font-size: 1.2rem;
       z-index: 1;
+    }
+
+    .modrinth-button {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #FF4F58;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      z-index: 1;
+      box-shadow: 0 0 10px #FF4F58;
+    }
+
+    .modrinth-button:hover {
+      background: #FF1F30;
     }
   </style>
 </head>
@@ -67,5 +87,6 @@
 
   <h1>Modding Hub of Oreo Warrior 💻</h1>
   <a href="suggestions.html">📩 Go to Suggestions</a>
+  <a href="https://modrinth.com/user/Oreo_Warrior" target="_blank" class="modrinth-button">Modrinth</a>
 </body>
 </html>
