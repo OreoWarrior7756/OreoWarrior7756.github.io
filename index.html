@@ -8,27 +8,33 @@
     body {
       margin: 0;
       font-family: Impact, Charcoal, sans-serif;
-      background: purple;
+      background: #602f60; /* Custom Purple */
       color: white;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
+      overflow: hidden;
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
       text-align: center;
+      z-index: 1;
     }
 
     .ad {
-      width: 200px;
-      height: 150px;
+      width: 300px;
+      height: 200px;
       background: rgba(255, 255, 255, 0.2);
       position: absolute;
       border: 3px dashed white;
-      box-shadow: 0 0 10px white;
+      box-shadow: 0 0 15px white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
     }
 
     .top-left { top: 20px; left: 20px; }
@@ -42,12 +48,14 @@
       left: 50%;
       transform: translateX(-50%);
       background: white;
-      color: purple;
-      padding: 0.75rem 1.25rem;
-      border-radius: 8px;
+      color: #602f60; /* Matching purple text */
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
       font-family: Impact, Charcoal, sans-serif;
+      font-size: 1.2rem;
+      z-index: 1;
     }
   </style>
 </head>
