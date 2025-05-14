@@ -3,59 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Suggestions</title>
+  <title>Suggestions - Oreo Warrior</title>
   <style>
     body {
+      margin: 0;
       font-family: Impact, Charcoal, sans-serif;
-      background: #111;
-      color: #fff;
-      padding: 2rem;
+      background: #000000; /* Black background */
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      flex-direction: column;
       text-align: center;
     }
 
     h1 {
-      margin-bottom: 1rem;
+      font-size: 3rem;
+      margin: 30px 0;
+      z-index: 1;
+    }
+
+    .modrinth-button, .curseforge-button, .youtube-button {
+      background: #28a745; /* Green background */
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      z-index: 1;
+      box-shadow: 0 0 10px #28a745;
+      margin-bottom: 20px; /* Space below each button */
+    }
+
+    .modrinth-button:hover, .curseforge-button:hover, .youtube-button:hover {
+      background: #218838;
+    }
+
+    .ad {
+      width: 300px;
+      height: 200px;
+      background: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      border: 3px dashed white;
+      box-shadow: 0 0 15px white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 3rem;
     }
 
-    #HCB_comment_box {
-      max-width: 700px;
-      margin: 2rem auto;
-      text-align: left;
-      background: #222;
-      padding: 1rem;
-      border-radius: 10px;
-    }
-
-    a {
-      display: block;
-      margin-top: 2rem;
-      color: #ccc;
-      text-decoration: underline;
-      font-size: 1.2rem;
-    }
+    .top-left { top: 20px; left: 20px; }
+    .top-right { top: 20px; right: 20px; }
+    .bottom-left { bottom: 20px; left: 20px; }
+    .bottom-right { bottom: 20px; right: 20px; }
   </style>
 </head>
 <body>
-  <h1>💡 Suggestions</h1>
-  <p>Have a cool idea for Oreo's Mods? Leave a comment below! 💬</p>
 
-  <!-- begin www.htmlcommentbox.com -->
-  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
-  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-  <script type="text/javascript" id="hcb">
-    if(!window.hcb_user){hcb_user={};}
-    (function(){
-      var s=document.createElement("script"),
-      l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"),
-      h="https://www.htmlcommentbox.com";
-      s.setAttribute("type","text/javascript");
-      s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24PG4PoYLiCJRCsXGqNx.gF0"+"&opts=16798&num=10&ts=1747224605264");
-      if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);
-    })();
-  </script>
-  <!-- end www.htmlcommentbox.com -->
+  <div class="ad top-left">📰</div>
+  <div class="ad top-right">🎯</div>
+  <div class="ad bottom-left">🧊</div>
+  <div class="ad bottom-right">🍪</div>
 
-  <a href="index.html">🔙 Back to Hub</a>
+  <h1>Suggestions - Oreo Warrior</h1>
+  
+  <!-- Common Ninja Comment System -->
+  <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+  <div class="commonninja_component pid-9f07e71d-d15f-4734-8d84-c92740888150"></div>
+
 </body>
 </html>
