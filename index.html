@@ -10,75 +10,67 @@
       font-family: Impact, Charcoal, sans-serif;
       background-color: #000000;
       color: white;
-      min-height: 100vh;
       overflow-x: hidden;
-      position: relative;
     }
 
-    /* Jumbo Buttons at Top */
     .top-buttons {
       position: fixed;
       top: 10px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
-      gap: 20px;
+      gap: 15px;
       z-index: 1000;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 12px 20px;
-      border-radius: 14px;
     }
 
-    .top-buttons a.button {
-      font-family: Impact, Charcoal, sans-serif;
-      font-weight: bold;
-      font-size: 1.8rem;
-      padding: 18px 36px;
-      border: none;
-      border-radius: 16px;
-      color: white;
+    .top-buttons a {
+      font-size: 1.5rem;
+      padding: 16px 28px;
+      border-radius: 12px;
       text-decoration: none;
-      cursor: pointer;
-      transition: filter 0.2s ease;
-      white-space: nowrap;
-      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 0 10px white;
+      transition: 0.2s ease;
     }
 
-    .top-buttons a.button:hover {
-      filter: brightness(0.85);
+    .modrinth { background-color: green; }
+    .curseforge { background-color: orange; }
+    .youtube { background-color: red; }
+
+    .top-buttons a:hover {
+      opacity: 0.85;
     }
 
-    .modrinth {
-      background-color: #28a745;
-    }
-    .curseforge {
-      background-color: #ff6600;
-    }
-    .youtube {
-      background-color: #ff0000;
-    }
-
-    /* Centered Header */
     header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 60vh;
       text-align: center;
-      margin-top: 130px;
-      padding: 0 20px;
+      padding: 200px 20px 80px;
     }
 
     header h1 {
       font-size: 4rem;
-      margin: 0;
     }
 
-    /* Ad spaces */
+    .go-suggestions {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .go-suggestions a {
+      font-size: 1.8rem;
+      background-color: purple;
+      color: white;
+      padding: 20px 40px;
+      text-decoration: none;
+      border-radius: 16px;
+      font-weight: bold;
+      box-shadow: 0 0 10px white;
+    }
+
     .ad {
       position: fixed;
-      width: 250px;
-      height: 180px;
+      width: 300px;
+      height: 250px;
       background: rgba(255, 255, 255, 0.15);
       border: 3px dashed white;
       box-shadow: 0 0 15px white;
@@ -93,59 +85,33 @@
       z-index: 900;
     }
 
-    .top-left { top: 15px; left: 15px; }
-    .top-right { top: 15px; right: 15px; }
-    .bottom-left { bottom: 15px; left: 15px; }
-    .bottom-right { bottom: 15px; right: 15px; }
-
-    /* Go to Suggestions */
-    .go-suggestions {
-      position: fixed;
-      bottom: 25px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #6a0dad;
-      color: white;
-      font-family: Impact, Charcoal, sans-serif;
-      font-size: 1.6rem;
-      padding: 14px 30px;
-      border-radius: 16px;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 0 15px #6a0dad;
-      transition: filter 0.2s ease;
-      text-decoration: none;
-      z-index: 1000;
-    }
-
-    .go-suggestions:hover {
-      filter: brightness(0.85);
-    }
+    .top-left { top: 10px; left: 10px; }
+    .top-right { top: 10px; right: 10px; }
+    .bottom-left { bottom: 10px; left: 10px; }
+    .bottom-right { bottom: 10px; right: 10px; }
   </style>
 </head>
 <body>
 
-  <!-- Top Buttons -->
   <div class="top-buttons">
-    <a href="https://modrinth.com/user/Oreo_Warrior" target="_blank" class="button modrinth">🟢 Modrinth</a>
-    <a href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank" class="button curseforge">🟠 Curseforge</a>
-    <a href="https://www.youtube.com/@Oreo_Warrior" target="_blank" class="button youtube">🔴 YouTube</a>
+    <a class="modrinth" href="https://modrinth.com/user/Oreo_Warrior" target="_blank">🧩 Modrinth</a>
+    <a class="curseforge" href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank">🔥 CurseForge</a>
+    <a class="youtube" href="https://www.youtube.com/@Oreo_Warrior" target="_blank">📺 YouTube</a>
   </div>
 
-  <!-- Header -->
   <header>
-    <h1>Modding hub of Oreo Warrior</h1>
+    <h1>Modding Hub of Oreo Warrior</h1>
   </header>
 
-  <!-- Ads in corners -->
-  <div class="ad top-left">📰 Ad Space 1</div>
-  <div class="ad top-right">🎯 Ad Space 2</div>
-  <div class="ad bottom-left">🧊 Ad Space 3</div>
-  <div class="ad bottom-right">🍪 Ad Space 4</div>
+  <div class="go-suggestions">
+    <a href="suggestions.html">💡 Go to Suggestions</a>
+  </div>
 
-  <!-- Bottom Button -->
-  <a href="suggestions.html" class="go-suggestions">💬 Go to Suggestions</a>
+  <div class="ad top-left">Ad</div>
+  <div class="ad top-right">Ad</div>
+  <div class="ad bottom-left">Ad</div>
+  <div class="ad bottom-right">Ad</div>
 
 </body>
 </html>
+
