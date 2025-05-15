@@ -10,99 +10,70 @@
       font-family: Impact, Charcoal, sans-serif;
       background-color: #000000;
       color: white;
-      min-height: 100vh;
-      padding-top: 80px; /* space for back button */
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
+      padding: 100px 20px;
     }
-    .back-button {
-      position: fixed;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #6a0dad; /* purple */
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .back-home {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-home a {
+      font-size: 1.8rem;
+      background-color: purple;
       color: white;
-      padding: 1rem 2rem;
+      padding: 20px 40px;
       text-decoration: none;
-      border-radius: 12px;
-      font-size: 1.2rem;
+      border-radius: 16px;
       font-weight: bold;
       box-shadow: 0 0 10px white;
-      z-index: 1000;
-      white-space: nowrap;
-      user-select: none;
-      transition: filter 0.2s ease;
     }
-    .back-button:hover {
-      filter: brightness(0.9);
-    }
-    h1 {
-      font-size: 3rem;
-      margin: 20px 0 40px 0;
-      user-select: none;
-      z-index: 1;
-    }
-    /* Ads in four corners */
+
     .ad {
-      width: 250px;
-      height: 200px;
-      background: rgba(255, 255, 255, 0.2);
+      position: fixed;
+      width: 300px;
+      height: 250px;
+      background: rgba(255, 255, 255, 0.15);
       border: 3px dashed white;
       box-shadow: 0 0 15px white;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 2rem;
       user-select: none;
       border-radius: 8px;
-      position: fixed;
-      z-index: 999;
-    }
-    .top-left {
-      top: 20px;
-      left: 20px;
-    }
-    .top-right {
-      top: 20px;
-      right: 20px;
-    }
-    .bottom-left {
-      bottom: 20px;
-      left: 20px;
-    }
-    .bottom-right {
-      bottom: 20px;
-      right: 20px;
+      z-index: 900;
     }
 
-    .comment-section {
-      width: 100%;
-      max-width: 900px;
-      padding: 0 10px 40px 10px;
-      box-sizing: border-box;
-      margin-top: 20px;
-      z-index: 1;
-    }
+    .top-left { top: 10px; left: 10px; }
+    .top-right { top: 10px; right: 10px; }
+    .bottom-left { bottom: 10px; left: 10px; }
+    .bottom-right { bottom: 10px; right: 10px; }
   </style>
-  <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
 </head>
 <body>
 
-  <a href="index.html" class="back-button">⬅️ Back to Home</a>
+  <h1>💬 Suggestions</h1>
 
-  <h1>Suggestions</h1>
+  <!-- Common Ninja Comment Box -->
+  <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+  <div class="commonninja_component pid-9f07e71d-d15f-4734-8d84-c92740888150"></div>
 
-  <div class="ad top-left">📰</div>
-  <div class="ad top-right">🎯</div>
-  <div class="ad bottom-left">🧊</div>
-  <div class="ad bottom-right">🍪</div>
-
-  <div class="comment-section">
-    <div class="commonninja_component pid-9f07e71d-d15f-4734-8d84-c92740888150"></div>
+  <div class="back-home">
+    <a href="index.html">🏠 Back to Home</a>
   </div>
+
+  <div class="ad top-left">Ad</div>
+  <div class="ad top-right">Ad</div>
+  <div class="ad bottom-left">Ad</div>
+  <div class="ad bottom-right">Ad</div>
 
 </body>
 </html>
