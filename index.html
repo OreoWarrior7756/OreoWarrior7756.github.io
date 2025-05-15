@@ -15,9 +15,9 @@
       align-items: center;
       justify-content: flex-start;
       min-height: 100vh;
-      overflow: hidden;
       position: relative;
       padding-top: 100px;
+      padding-bottom: 80px; /* Space for footer button */
     }
 
     h1 {
@@ -35,7 +35,7 @@
     }
 
     .button-row a,
-    .bottom-button a {
+    .footer-button a {
       padding: 1rem 1.5rem;
       text-decoration: none;
       border-radius: 12px;
@@ -51,13 +51,16 @@
     .suggestions { background-color: #6a0dad; } /* Purple */
 
     .button-row a:hover,
-    .bottom-button a:hover {
+    .footer-button a:hover {
       filter: brightness(0.9);
     }
 
-    .bottom-button {
-      position: absolute;
+    .footer-button {
+      position: fixed;
       bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
     }
 
     .ad {
@@ -89,7 +92,7 @@
     <a class="youtube" href="https://www.youtube.com/@Oreo_Warrior" target="_blank">📺 YouTube</a>
   </div>
 
-  <div class="bottom-button">
+  <div class="footer-button">
     <a class="suggestions" href="suggestions.html">💬 Go to Suggestions</a>
   </div>
 
@@ -100,3 +103,4 @@
 
 </body>
 </html>
+
