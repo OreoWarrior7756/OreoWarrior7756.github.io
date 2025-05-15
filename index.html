@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Modding Hub of Oreo Warrior</title>
   <style>
     body {
@@ -10,58 +10,58 @@
       font-family: Impact, Charcoal, sans-serif;
       background-color: #000000;
       color: white;
+      min-height: 100vh;
+      padding-top: 100px; /* space for buttons */
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      min-height: 100vh;
-      position: relative;
-      padding-top: 100px;
     }
-
     h1 {
       font-size: 3rem;
-      margin-bottom: 1rem;
+      margin: 0 0 1rem 0;
+      user-select: none;
       z-index: 1;
     }
-
     .button-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      gap: 12px;
       justify-content: center;
-      margin-top: 10px;
-    }
-
-    .button-row a,
-    .footer-button a {
-      padding: 1rem 1.5rem;
-      text-decoration: none;
-      border-radius: 12px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      box-shadow: 0 0 10px white;
-      color: white;
-    }
-
-    .modrinth { background-color: #28a745; } /* Green */
-    .curseforge { background-color: orange; }
-    .youtube { background-color: red; }
-    .suggestions { background-color: #6a0dad; } /* Purple */
-
-    .button-row a:hover,
-    .footer-button a:hover {
-      filter: brightness(0.9);
-    }
-
-    .footer-button {
+      flex-wrap: wrap;
       position: fixed;
-      bottom: 20px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 1000;
     }
-
+    .button-row a {
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 0 10px white;
+      white-space: nowrap;
+      user-select: none;
+      transition: filter 0.2s ease;
+    }
+    .button-row a:hover {
+      filter: brightness(0.9);
+    }
+    .modrinth {
+      background-color: #28a745; /* green */
+    }
+    .curseforge {
+      background-color: orange;
+    }
+    .youtube {
+      background-color: red;
+    }
+    .suggestions {
+      background-color: #6a0dad; /* purple */
+    }
     .ad {
       width: 250px;
       height: 200px;
@@ -73,32 +73,69 @@
       justify-content: center;
       align-items: center;
       font-size: 2rem;
+      user-select: none;
+      border-radius: 8px;
     }
-
-    .top-left { top: 20px; left: 20px; }
-    .top-right { top: 20px; right: 20px; }
-    .bottom-left { bottom: 20px; left: 20px; }
-    .bottom-right { bottom: 20px; right: 20px; }
+    .top-left {
+      top: 20px;
+      left: 20px;
+    }
+    .top-right {
+      top: 20px;
+      right: 20px;
+    }
+    .bottom-left {
+      bottom: 20px;
+      left: 20px;
+    }
+    .bottom-right {
+      bottom: 20px;
+      right: 20px;
+    }
+    /* Fixed bottom suggestions button */
+    .footer-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+    }
+    .footer-button a {
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      background-color: #6a0dad;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 0 12px white;
+      user-select: none;
+      white-space: nowrap;
+      transition: filter 0.2s ease;
+    }
+    .footer-button a:hover {
+      filter: brightness(0.9);
+    }
   </style>
 </head>
 <body>
 
-  <h1>Modding Hub of Oreo Warrior</h1>
-
   <div class="button-row">
-    <a class="modrinth" href="https://modrinth.com/user/Oreo_Warrior" target="_blank">🧩 Modrinth</a>
-    <a class="curseforge" href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank">🔥 CurseForge</a>
-    <a class="youtube" href="https://www.youtube.com/@Oreo_Warrior" target="_blank">📺 YouTube</a>
+    <a class="modrinth" href="https://modrinth.com/user/Oreo_Warrior" target="_blank" rel="noopener noreferrer">🧩 Modrinth</a>
+    <a class="curseforge" href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank" rel="noopener noreferrer">🔥 CurseForge</a>
+    <a class="youtube" href="https://www.youtube.com/@Oreo_Warrior" target="_blank" rel="noopener noreferrer">📺 YouTube</a>
   </div>
 
-  <div class="footer-button">
-    <a class="suggestions" href="suggestions.html">💬 Go to Suggestions</a>
-  </div>
+  <h1>Modding Hub of Oreo Warrior</h1>
 
   <div class="ad top-left">📰</div>
   <div class="ad top-right">🎯</div>
   <div class="ad bottom-left">🧊</div>
   <div class="ad bottom-right">🍪</div>
+
+  <div class="footer-button">
+    <a class="suggestions" href="suggestions.html">💬 Go to Suggestions</a>
+  </div>
 
 </body>
 </html>
