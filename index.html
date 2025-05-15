@@ -2,152 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Modding Hub - Oreo Warrior</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modding Hub of Oreo Warrior</title>
   <style>
     body {
       margin: 0;
-      font-family: Impact, Charcoal, sans-serif;
-      background-color: #000000;
+      font-family: Impact, sans-serif;
+      background-color: black;
       color: white;
-      overflow-x: hidden;
+      text-align: center;
     }
-
-    .top-buttons {
-      position: fixed;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 15px;
-      z-index: 1000;
-    }
-
-    .top-buttons a {
-      font-size: 1.5rem;
-      padding: 16px 28px;
-      border-radius: 12px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      box-shadow: 0 0 10px white;
-      transition: 0.2s ease;
-    }
-
-    .modrinth { background-color: green; }
-    .curseforge { background-color: orange; }
-    .youtube { background-color: red; }
-
-    .top-buttons a:hover {
-      opacity: 0.85;
-    }
-
     header {
-      text-align: center;
-      padding: 200px 20px 80px;
+      background-color: #602f60;
+      padding: 20px;
     }
-
-    header h1 {
-      font-size: 4rem;
+    h1 {
+      margin: 0;
+      font-size: 3em;
     }
-
-    .go-suggestions {
-      text-align: center;
-      margin-top: 50px;
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+      flex-wrap: wrap;
     }
-
-    .go-suggestions a {
-      font-size: 1.8rem;
-      background-color: purple;
+    .button {
+      font-size: 1.2em;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: Impact, sans-serif;
+    }
+    .modrinth { background-color: green; color: white; }
+    .curseforge { background-color: orange; color: white; }
+    .youtube { background-color: red; color: white; }
+    .goto-suggestions {
+      background-color: #444;
       color: white;
-      padding: 20px 40px;
-      text-decoration: none;
-      border-radius: 16px;
-      font-weight: bold;
-      box-shadow: 0 0 10px white;
+      padding: 15px 30px;
+      font-size: 1.5em;
+      border: none;
+      border-radius: 10px;
+      margin-top: 50px;
+      cursor: pointer;
     }
-
     .ad {
-      position: fixed;
+      position: absolute;
       width: 300px;
       height: 250px;
-      z-index: 900;
+      z-index: 999;
     }
-
-    .top-left { top: 10px; left: 10px; }
-    .top-right { top: 10px; right: 10px; }
-    .bottom-left { bottom: 10px; left: 10px; }
-    .bottom-right { bottom: 10px; right: 10px; }
+    .top-left { top: 0; left: 0; }
+    .top-right { top: 0; right: 0; }
+    .bottom-left { bottom: 0; left: 0; }
+    .bottom-right { bottom: 0; right: 0; }
   </style>
 </head>
 <body>
-
-  <div class="top-buttons">
-    <a class="modrinth" href="https://modrinth.com/user/Oreo_Warrior" target="_blank">🧩 Modrinth</a>
-    <a class="curseforge" href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank">🔥 CurseForge</a>
-    <a class="youtube" href="https://www.youtube.com/@Oreo_Warrior" target="_blank">📺 YouTube</a>
-  </div>
-
   <header>
-    <h1>Modding Hub of Oreo Warrior</h1>
+    <h1>💻 Modding Hub of Oreo Warrior 💜</h1>
+    <div class="button-container">
+      <a href="https://modrinth.com/user/Oreo_Warrior" target="_blank"><button class="button modrinth">Modrinth</button></a>
+      <a href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank"><button class="button curseforge">CurseForge</button></a>
+      <a href="https://www.youtube.com/@Oreo_Warrior" target="_blank"><button class="button youtube">YouTube</button></a>
+    </div>
   </header>
 
-  <div class="go-suggestions">
-    <a href="suggestions.html">💡 Go to Suggestions</a>
-  </div>
+  <a href="suggestions.html"><button class="goto-suggestions">💡 Go to Suggestions</button></a>
 
-  <!-- Ads in corners -->
+  <!-- Adsterra Ads -->
   <div class="ad top-left">
     <script type="text/javascript">
       atOptions = {
-        'key' : '1ce8dd9ea28ab6c283d66328b131adbc',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
+        'key': '1ce8dd9ea28ab6c283d66328b131adbc',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
       };
     </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/1ce8dd9ea28ab6c283d66328b131adbc/invoke.js"></script>
+    <script type="text/javascript" src="https://www.highperformanceformat.com/1ce8dd9ea28ab6c283d66328b131adbc/invoke.js"></script>
   </div>
-
   <div class="ad top-right">
     <script type="text/javascript">
       atOptions = {
-        'key' : '1ce8dd9ea28ab6c283d66328b131adbc',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
+        'key': '1ce8dd9ea28ab6c283d66328b131adbc',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
       };
     </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/1ce8dd9ea28ab6c283d66328b131adbc/invoke.js"></script>
+    <script type="text/javascript" src="https://www.highperformanceformat.com/1ce8dd9ea28ab6c283d66328b131adbc/invoke.js"></script>
   </div>
-
   <div class="ad bottom-left">
     <script type="text/javascript">
       atOptions = {
-        'key' : '1ce8dd9ea28ab6c283d66328b131adbc',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
+        'key': '1ce8dd9ea28ab6c283d66328b131adbc',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
       };
     </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/1ce8dd9ea28ab6c283d66328b131adbc/invoke.js"></script>
+    <script type="text/javascript" src="https://www.highperformanceformat.com/1ce8dd9ea28ab6c283d66328b131adbc/invoke.js"></script>
   </div>
-
   <div class="ad bottom-right">
     <script type="text/javascript">
       atOptions = {
-        'key' : '1ce8dd9ea28ab6c283d66328b131adbc',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
+        'key': '1ce8dd9ea28ab6c283d66328b131adbc',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
       };
     </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/1ce8dd9ea28ab6c283d66328b131adbc/invoke.js"></script>
+    <script type="text/javascript" src="https://www.highperformanceformat.com/1ce8dd9ea28ab6c283d66328b131adbc/invoke.js"></script>
   </div>
-
 </body>
 </html>
