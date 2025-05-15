@@ -15,35 +15,36 @@
       overflow-x: hidden;
     }
 
-    /* Container for buttons */
+    /* Jumbo Buttons Container */
     .top-buttons {
       position: fixed;
       top: 10px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
-      gap: 12px;
+      gap: 20px;
       z-index: 1000;
       background: rgba(0, 0, 0, 0.6);
-      padding: 8px 16px;
-      border-radius: 10px;
+      padding: 12px 20px;
+      border-radius: 14px;
       user-select: none;
     }
 
-    /* Buttons */
+    /* Jumbo Buttons */
     .top-buttons a.button {
       font-family: Impact, Charcoal, sans-serif;
       font-weight: bold;
-      font-size: 1rem;
-      padding: 10px 18px;
+      font-size: 1.8rem;     /* BIG FONT */
+      padding: 18px 36px;    /* BIG PADDING */
       border: none;
-      border-radius: 12px;
+      border-radius: 16px;
       color: white;
       text-decoration: none;
       cursor: pointer;
       transition: filter 0.2s ease;
       white-space: nowrap;
       user-select: none;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
     }
     .top-buttons a.button:hover {
       filter: brightness(0.85);
@@ -60,7 +61,7 @@
 
     /* Header below buttons */
     header {
-      margin-top: 70px; /* Enough space below fixed buttons */
+      margin-top: 90px; /* More space below big buttons */
       text-align: center;
       user-select: none;
     }
