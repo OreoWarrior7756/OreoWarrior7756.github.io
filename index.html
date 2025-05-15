@@ -16,6 +16,7 @@
       justify-content: center;
       height: 100vh;
       overflow: hidden;
+      position: relative;
     }
 
     h1 {
@@ -28,22 +29,35 @@
       position: absolute;
       top: 10px;
       display: flex;
+      flex-wrap: wrap;
       gap: 10px;
+      justify-content: center;
     }
 
-    .button-container a {
-      background-color: #28a745;
-      color: white;
-      padding: 0.5rem 1rem;
+    .bottom-button {
+      position: absolute;
+      bottom: 20px;
+    }
+
+    .button-container a,
+    .bottom-button a {
+      padding: 1rem 1.5rem;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 1rem;
+      border-radius: 12px;
+      font-size: 1.2rem;
       font-weight: bold;
-      box-shadow: 0 0 10px #28a745;
+      box-shadow: 0 0 10px white;
+      color: white;
     }
 
-    .button-container a:hover {
-      background-color: #218838;
+    .modrinth { background-color: #28a745; } /* Green */
+    .curseforge { background-color: orange; }
+    .youtube { background-color: red; }
+    .suggestions { background-color: #6a0dad; } /* Purple */
+
+    .button-container a:hover,
+    .bottom-button a:hover {
+      filter: brightness(0.9);
     }
 
     .ad {
@@ -68,9 +82,13 @@
 <body>
 
   <div class="button-container">
-    <a href="https://modrinth.com/user/Oreo_Warrior" target="_blank">Modrinth</a>
-    <a href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank">CurseForge</a>
-    <a href="https://www.youtube.com/@Oreo_Warrior" target="_blank">YouTube</a>
+    <a class="modrinth" href="https://modrinth.com/user/Oreo_Warrior" target="_blank">🧩 Modrinth</a>
+    <a class="curseforge" href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank">🔥 CurseForge</a>
+    <a class="youtube" href="https://www.youtube.com/@Oreo_Warrior" target="_blank">📺 YouTube</a>
+  </div>
+
+  <div class="bottom-button">
+    <a class="suggestions" href="suggestions.html">💬 Go to Suggestions</a>
   </div>
 
   <div class="ad top-left">📰</div>
