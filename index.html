@@ -34,7 +34,8 @@
       margin-top: 10px;
     }
 
-    .button-row a {
+    .button-row a,
+    .bottom-button a {
       padding: 1rem 1.5rem;
       text-decoration: none;
       border-radius: 12px;
@@ -49,8 +50,14 @@
     .youtube { background-color: red; }
     .suggestions { background-color: #6a0dad; } /* Purple */
 
-    .button-row a:hover {
+    .button-row a:hover,
+    .bottom-button a:hover {
       filter: brightness(0.9);
+    }
+
+    .bottom-button {
+      position: absolute;
+      bottom: 20px;
     }
 
     .ad {
@@ -80,6 +87,9 @@
     <a class="modrinth" href="https://modrinth.com/user/Oreo_Warrior" target="_blank">🧩 Modrinth</a>
     <a class="curseforge" href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank">🔥 CurseForge</a>
     <a class="youtube" href="https://www.youtube.com/@Oreo_Warrior" target="_blank">📺 YouTube</a>
+  </div>
+
+  <div class="bottom-button">
     <a class="suggestions" href="suggestions.html">💬 Go to Suggestions</a>
   </div>
 
