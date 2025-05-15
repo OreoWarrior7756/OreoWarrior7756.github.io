@@ -13,10 +13,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: flex-start;
+      min-height: 100vh;
       overflow: hidden;
       position: relative;
+      padding-top: 100px;
     }
 
     h1 {
@@ -25,22 +26,15 @@
       z-index: 1;
     }
 
-    .button-container {
-      position: absolute;
-      top: 10px;
+    .button-row {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       justify-content: center;
+      margin-top: 10px;
     }
 
-    .bottom-button {
-      position: absolute;
-      bottom: 20px;
-    }
-
-    .button-container a,
-    .bottom-button a {
+    .button-row a {
       padding: 1rem 1.5rem;
       text-decoration: none;
       border-radius: 12px;
@@ -55,8 +49,7 @@
     .youtube { background-color: red; }
     .suggestions { background-color: #6a0dad; } /* Purple */
 
-    .button-container a:hover,
-    .bottom-button a:hover {
+    .button-row a:hover {
       filter: brightness(0.9);
     }
 
@@ -81,13 +74,12 @@
 </head>
 <body>
 
-  <div class="button-container">
+  <h1>Modding Hub of Oreo Warrior</h1>
+
+  <div class="button-row">
     <a class="modrinth" href="https://modrinth.com/user/Oreo_Warrior" target="_blank">🧩 Modrinth</a>
     <a class="curseforge" href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank">🔥 CurseForge</a>
     <a class="youtube" href="https://www.youtube.com/@Oreo_Warrior" target="_blank">📺 YouTube</a>
-  </div>
-
-  <div class="bottom-button">
     <a class="suggestions" href="suggestions.html">💬 Go to Suggestions</a>
   </div>
 
@@ -95,8 +87,6 @@
   <div class="ad top-right">🎯</div>
   <div class="ad bottom-left">🧊</div>
   <div class="ad bottom-right">🍪</div>
-
-  <h1>Modding Hub of Oreo Warrior</h1>
 
 </body>
 </html>
