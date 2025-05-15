@@ -15,14 +15,13 @@
       overflow-x: hidden;
     }
 
-    /* Header container with buttons */
-    .top-bar {
+    /* Container for buttons */
+    .top-buttons {
       position: fixed;
       top: 10px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
-      align-items: center;
       gap: 12px;
       z-index: 1000;
       background: rgba(0, 0, 0, 0.6);
@@ -31,16 +30,8 @@
       user-select: none;
     }
 
-    .top-bar h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      color: white;
-      user-select: none;
-      white-space: nowrap;
-    }
-
-    /* Buttons near header */
-    .top-bar a.button {
+    /* Buttons */
+    .top-buttons a.button {
       font-family: Impact, Charcoal, sans-serif;
       font-weight: bold;
       font-size: 1rem;
@@ -54,7 +45,7 @@
       white-space: nowrap;
       user-select: none;
     }
-    .top-bar a.button:hover {
+    .top-buttons a.button:hover {
       filter: brightness(0.85);
     }
     .modrinth {
@@ -65,6 +56,18 @@
     }
     .youtube {
       background-color: #ff0000; /* red */
+    }
+
+    /* Header below buttons */
+    header {
+      margin-top: 70px; /* Enough space below fixed buttons */
+      text-align: center;
+      user-select: none;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      white-space: nowrap;
     }
 
     /* Ads in corners */
@@ -132,12 +135,15 @@
 </head>
 <body>
 
-  <div class="top-bar">
+  <div class="top-buttons">
     <a href="https://modrinth.com/user/Oreo_Warrior" target="_blank" rel="noopener noreferrer" class="button modrinth">🟢 Modrinth</a>
     <a href="https://www.curseforge.com/members/oreo_warrior/projects" target="_blank" rel="noopener noreferrer" class="button curseforge">🟠 Curseforge</a>
     <a href="https://www.youtube.com/@Oreo_Warrior" target="_blank" rel="noopener noreferrer" class="button youtube">🔴 YouTube</a>
-    <h1>Modding hub of Oreo Warrior</h1>
   </div>
+
+  <header>
+    <h1>Modding hub of Oreo Warrior</h1>
+  </header>
 
   <div class="ad top-left">📰 Ad Space 1</div>
   <div class="ad top-right">🎯 Ad Space 2</div>
